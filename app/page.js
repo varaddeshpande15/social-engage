@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-
+import Link from 'next/link';
 export default function HomePage() {
   const [inputValue, setInputValue] = useState('');
   const [outputValue, setOutputValue] = useState('');
@@ -60,11 +60,13 @@ export default function HomePage() {
             Home
           </a>
           <a href="/about" className="hover:text-purple-500 py-2">
+          
             About
           </a>
           <a href="/contact" className="hover:text-purple-500 py-2">
             Contact
           </a>
+         
           <a
             href="#input-section"
             className="bg-purple-500 hover:bg-purple-600 text-white py-2 px-5 rounded-md font-semibold"
