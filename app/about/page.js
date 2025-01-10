@@ -4,7 +4,8 @@ import Image from 'next/image';
 import Sushant from '../assets/Images/profileImage.jpg';
 import Varad from '../assets/Images/Varad.jpg';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-
+import Aditya from '@/app/assets/Images/Aditya.jpg';
+import Harshal from '@/app/assets/Images/Harshal.jpg';
 export default function About() {
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center">
@@ -40,7 +41,7 @@ export default function About() {
         className="flex flex-col justify-center items-center text-center py-24 px-4 bg-black w-full"
       >
         <h1 className="text-3xl font-bold mb-8 text-purple-500">Meet Our Team</h1>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* First Member */}
           <div className="bg-gray-800 p-6 rounded-3xl shadow-lg max-w-md flex flex-col items-center">
             {/* Profile Image */}
@@ -109,6 +110,92 @@ export default function About() {
             <p className="text-sm text-gray-400 text-center mb-4">
               Varad Deshpande is a skilled developer with experience in AI-powered
               solutions, leveraging data-driven insights to solve real-world problems.
+            </p>
+
+            {/* Social Links */}
+            <div className="flex space-x-4">
+              <a
+                href="https://www.linkedin.com/in/varaddeshpande15/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-blue-400"
+              >
+                <FaLinkedin size={24} />
+              </a>
+              <a
+                href="https://github.com/varaddeshpande15"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-gray-500"
+              >
+                <FaGithub size={24} />
+              </a>
+            </div>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-3xl shadow-lg max-w-md flex flex-col items-center">
+            {/* Profile Image */}
+            <div className="mb-4">
+              <Image
+                src={Aditya}
+                alt="Aditya shilwalkar"
+                width={150}
+                height={150}
+                className="rounded-full object-cover"
+              />
+            </div>
+
+            {/* Role */}
+            <h2 className="text-lg font-semibold text-gray-300 mb-2">
+              FUll-Stack Developer
+            </h2>
+
+            {/* Description */}
+            <p className="text-sm text-gray-400 text-center mb-4">
+            Skilled full-stack web developer with expertise in modern frameworks such as 
+            Angular, React.js and TypeScript and enthusiasm for Cyber Security, DevOps and AI
+            </p>
+
+            {/* Social Links */}
+            <div className="flex space-x-4">
+              <a
+                href="http://linkedin.com/in/aditya-shirwalkar-670832256"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-blue-400"
+              >
+                <FaLinkedin size={24} />
+              </a>
+              <a
+                href="http://github.com/AdityaShirwalkar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-gray-500"
+              >
+                <FaGithub size={24} />
+              </a>
+            </div>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-3xl shadow-lg max-w-md flex flex-col items-center">
+            {/* Profile Image */}
+            <div className="mb-4">
+              <Image
+                src={Harshal}
+                alt="Varad Deshpande"
+                width={150}
+                height={150}
+                className="rounded-full object-cover"
+              />
+            </div>
+
+            {/* Role */}
+            <h2 className="text-lg font-semibold text-gray-300 mb-2">
+              AI Specialist
+            </h2>
+
+            {/* Description */}
+            <p className="text-sm text-gray-400 text-center mb-4">
+            Harshal Muthiyan is a skilled developer with expertise in Python, a passion for
+             machine learning, and proficiency in data visualization, creating innovative solutions to address community challenges.
             </p>
 
             {/* Social Links */}
